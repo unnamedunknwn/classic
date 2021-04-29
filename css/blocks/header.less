@@ -1,0 +1,133 @@
+// main: ../style.less
+
+
+header {
+    // max-width: 1366px;
+    // margin: 0 auto;
+    background-color: @header-bg;
+    height: 750px;
+}
+
+.header {
+    padding-top: 30px;
+
+}
+
+.header_container {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.main {
+    background-image: url("../img/header-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -30px -100px;
+    height: 760px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Nav_Left */
+.nav__link .nav__links {
+    text-decoration: none;
+    color: @black;
+    font-weight: 400;
+    margin-right: 40px;
+}
+
+
+
+
+.logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* Nav_Right */
+.nav__right {
+    display: flex;
+    align-items: center;
+}
+
+.working__hours {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.working__hours::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #46CB72;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.phone__number {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+
+.phone__icon {
+    background-color: #F58656;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.main .main__center_text {
+    max-width: 621px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.main__title h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: @black;
+
+}
+
+.main__text p {
+    font-size: 18px;
+    font-weight: 400;
+    color: @black;
+}
+
+.pizza__button {
+    position: relative;
+    top: 160px;
+    left: 50%+10px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color: #F58656;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.order_text {
+    text-align: right;
+    position: relative;
+    right: 150px;
+    top: 50px;
+    color: @black;
+}
+
+.order_text span{
+    color: #F58656;
+    font-weight: 700;
+}

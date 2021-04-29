@@ -1,0 +1,178 @@
+// main: ../style.less
+
+section {
+    margin-top: 10px;
+}
+
+.pizza_orders h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.orders_nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.orders_nav .foods_nav{
+    outline: none;
+    border: none;
+    color: @black;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 50px;
+    background-color: #ECEEF6;
+    margin-right: 30px;
+    border-radius: 45px;
+}
+
+.active {
+    background-color: #59AAF1;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 50px;
+    margin-right: 30px;
+    border-radius: 45px;
+
+}
+
+
+.pizza_cards {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    // max-width: 1160px;
+    // margin: 0 auto;
+
+}
+
+.card {
+    max-width: 265px;
+    border: 2px solid #ECEEF6;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 15px auto;
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.card_img{
+    display: flex;
+    justify-content: center;
+}
+
+.card_img img {
+    width: 170px;
+}
+
+.about_pizza {
+    margin-top: 30px;
+}
+
+.type_pizza {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.type_pizza h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.type_pizza span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.about_pizza p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.xit {
+    position: absolute;
+    background-color: #FE3326;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 20px;
+    border-radius: 3px;
+    top: 15px;
+    left: 15px;
+}
+
+.price_pizza p{
+    text-align: center;
+    color: #121146;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.basket{
+    position: absolute;
+    left: 107px;
+    z-index: 10;
+    padding: 20px;
+    border-radius: 100%;
+    border: 2px solid #eceef7;
+    background-color: #fff;
+    background-image: url(../img/basket.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card:hover .basket {
+    box-shadow: 0px 4px 8px rgb(205 71 41 / 26%);
+    background-color: #F58656;
+    background-image: url(../img/basket-white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+}
+
+
+.card::after {
+    position: absolute;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    content: "";
+    border-radius: 0 0 25px 0 ;
+    border-right: 2px solid #eceef7;
+    border-bottom: 2px solid #eceef7;
+    transform: rotate(45deg);
+    bottom: -27px;
+    left: 103px;
+    z-index: 4;
+}
+
+.refresh__btn {
+    background: url(../img/refresh_icon.svg);
+    padding: 30px;
+    border-radius: 100%;
+    background-color: #F58656;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgb(205 71 41 / 96%);
+    outline: none;
+    border: none;
+    margin-bottom: 20px;   
+}
