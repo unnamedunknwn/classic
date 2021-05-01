@@ -1,0 +1,87 @@
+// main: ../style.less
+
+.contact {
+    position: relative;
+    background: url("../img/bg-vegetable.png");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 50px;
+    background-color: #F0F5FB;
+    margin: 0 auto;
+    max-width: 1366px;
+}
+
+.contact::after{
+    content: " ";
+    background: url("../img/car4.png");
+    background-repeat: no-repeat;
+    width: 690px;
+    height: 280px;
+    position: absolute;
+    left: 350px;
+    bottom: -80px;
+}
+
+.contact_title {
+    display: flex;
+    justify-content: center;
+}
+
+.contact_title h2 {
+    color: @black;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.form {
+    margin-top: 50px;
+}
+
+.form form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 860px;
+    position: relative;
+}
+
+.form form input {
+    padding: 20px 70px 20px 30px;
+    border: none;
+    border-radius: 57px;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+}
+
+
+.contact_btn{
+    padding: 20px 120px 20px 30px;
+    border: none;
+    border-radius: 57px;
+    background: linear-gradient(180deg, #FE5626 0%, #F23F0E 100%), #59AAF1;
+    box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.contact_btn::after {
+    content: " ";
+    background-image: url("../img/Arrow.png");
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 12px;
+    position: absolute;
+    z-index: 99999999;
+    right: 40px;
+}
+
+
+
